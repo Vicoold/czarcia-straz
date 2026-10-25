@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "unity-mcp": {
+      "command": "/Users/pdolinski/.unity/relay/relay_mac_arm64.app/Contents/MacOS/relay_mac_arm64",
+      "args": [
+        "--mcp",
+        "--project-path",
+        "/Users/pdolinski/hacathon"
+      ]
+    },
+    "blender-mcp": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "/Users/pdolinski/AssembleApp/Tools/mcp/blender_mcp_server.py"
+      ]
+    }
+  }
+}

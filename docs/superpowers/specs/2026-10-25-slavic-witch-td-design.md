@@ -133,9 +133,13 @@ Inspirowana drewnianą wschodnio-polską architekturą sakralną (Puchły, Koter
 * **Poziom 2 (Koszt: 8 siana):** Rozbudowane poddasze i rzeźbione okiennice. Zwiększa limit Populacji z $+4$ do $+8$, generuje $+4$ siana o świcie. HP: 800.
 
 ### 5.3. Koszary Kultystów / Stodoła (`Podlasie_Barn_Puchly_62.fbx`, $3 \times 2$)
-* **Wymagania:** Zużywa 3 punkty wolnej populacji z chałup.
-* **Poziom 1 (Koszt: 10 siana):** Drewniana stodoła z proporcem kultu. Spawnuje 3 Kultystów-Wojowników (uzbrojonych w kosy i maczugi). Gracz może przestawić Sztandar Zbiórki (Rally Point) na dowolne pole siatki.
-* **Poziom 2 (Koszt: 14 siana):** Zbrojownia z kuźnią. Kultyści zyskują kościane pancerze ($+50\%$ HP) i broń nasączoną jadem (ataki spowalniają wrogów o $20\%$).
+* **Wymagania:** Zużywa punkty wolnej populacji z chałup mieszkalnych.
+* **Jednostki Kultu Gracza (Różnorodność Armii):**
+  1. **Akolici z Kosami (Melee Zealots):** Tani, szybcy wojownicy zwarcia blokujący przejścia w bramie.
+  2. **Kościani Łucznicy Kultu (Bone Archers):** Strzelcy w maskach ze zwierzęcych czaszek, strzelający fioletowymi strzałami zza murów lub pomostów.
+  3. **Opętani Osiłki (Cult Brutes / Poziom 2):** Potężni kultyści z dwuręcznymi kafarami/młotami ogłuszający wrogów.
+* **Poziom 1 (Koszt: 10 siana):** Drewniana stodoła z proporcem kultu. Spawnuje 3 Akolitów z Kosami. Gracz może przestawić Sztandar Zbiórki (Rally Point) na dowolne pole siatki.
+* **Poziom 2 (Koszt: 14 siana):** Odblokowuje Kościanych Łuczników oraz Opętanych Osiłków. Kultyści zyskują pancerze ze skór i kości ($+50\%$ HP) oraz broń nasączoną jadem (ataki spowalniają wrogów o $20\%$).
 
 ### 5.4. Wieża Strażnicza ($2 \times 2$)
 * **Wymagania:** Zużywa 1 punkt wolnej populacji jako obsadę.
@@ -144,16 +148,18 @@ Inspirowana drewnianą wschodnio-polską architekturą sakralną (Puchły, Koter
   * *Ścieżka A (Wieża Płomienia Biesowego):* Zadaje obrażenia obszarowe (splash $3\text{ m}$) – idealna przeciw hordom chłopów.
   * *Ścieżka B (Wieża Pomoru):* Strzela bełtami przebijającymi pancerz paladynów i nakłada truciznę zadającą obrażenia rozłożone w czasie (DoT).
 
-### 5.5. Palisada Drewniana ($1 \times 1$)
+### 5.5. Palisada Drewniana z Lampionami Rytualnymi ($1 \times 1$)
 * **Koszt:** 1 siano za segment.
 * **Statystyki:** HP: 500. Zablokowany ruch lądowy.
+* **Mroczne Oświetlenie Okultystyczne:** Co 3 segmenty muru na słupie zamontowany jest fioletowy lampion rytualny lub czaszka z fioletowym płomieniem (`PointLight` w URP o zasięgu 3.5m), rzucająca klimatyczny fioletowy blask i cienie na deski palisady oraz ziemię. Belki mają wyryte ledwo widoczne runy jarzące się w ciemności.
 * **Ulepszenie do Palisady Okutej (Koszt: 2 siana za segment):** HP: 1200, odbija $10\%$ obrażeń wręcz z powrotem w atakującego.
 
 ---
 
 ## 6. Sterowanie Wiedźmą, Auto-Atak i System 3 Czarów
 
-### 6.1. Sterowanie Mobilne (Touch HUD)
+### 6.1. Sterowanie Mobilne (Touch HUD) i Osobowość Wiedźmy
+* **Osobowość i Wygląd Wiedźmy:** Mroczna, przebiegła słowiańska wiedźma z szyderczym, obłąkanym uśmieszkiem i jarzącymi się ślepiami (żadnego słodkiego uśmiechu czy infantylizmu). W dłoni sękaty kostur trzaskający fioletowymi wyładowaniami klątwy.
 * **Lewy ekran:** Pływający wirtualny joystick (`FloatingJoystick`) – pojawia się w miejscu pierwszego dotknięcia palca. Steruje wektorem prędkości Wiedźmy w przestrzeni izometrycznej.
 * **Prawy ekran:**
   * Auto-atak: Wiedźma posiada pole detekcji wrogów ($R = 8\text{ m}$). Najbliższy wrogi cel otrzymuje świecący celownik klątwy. Wiedźma automatycznie wystrzeliwuje pociski mrocznej magii co $0.7\text{ s}$ bez przerywania biegu.
